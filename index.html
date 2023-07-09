@@ -24,7 +24,7 @@
         <!--onclickで要素を上下する-->
         <div class="p-calender">
             <div class="p-calender__day-of-week__wrapper">
-                <div class="p-calender__day-of-week sunday">日</div>
+                <div class="p-calender__day-of-week u-sunday">日</div>
                 <div class="p-calender__day-of-week">月</div>
                 <div class="p-calender__day-of-week">火</div>
                 <div class="p-calender__day-of-week">水</div>
@@ -33,13 +33,7 @@
                 <div class="p-calender__day-of-week">土</div>
             </div>
             <!--v-forで作れないか-->
-            <template>
-                <div id="app">
-                    <div v-for="n of 7" :key="n">
-                        <div>{{n}}</div>
-                    </div>
-                </div>
-            </template>
+            
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
