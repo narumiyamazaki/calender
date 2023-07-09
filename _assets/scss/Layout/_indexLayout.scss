@@ -1,0 +1,18 @@
+@use './l-header';
+@use './l-footer';
+@use './l-main';
+
+//privacy-policy
+@use './l-main--privacy-policy';
+
+//business-history
+@use './l-main--business-history';
+
+//company-profile
+@use './l-main--company-profile';
+
+//town
+@use './l-main--town';
+
+//town-archive
+@use './l-main--town-archive';

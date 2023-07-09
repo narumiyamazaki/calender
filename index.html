@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>コーディングの教科書Lesson24</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name=”description” content=”ハンドメイド猫グッズのお店ねこのもの” />
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+        <link href="./style.css" rel="stylesheet">
+    <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b8a7fea4d4.js"></script>
+    <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <!--
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        -->
+    </head>
+    <body class="p-body">
+        <!--onclickで要素を上下する-->
+        <div class="p-calender">
+            <div class="p-calender__day-of-week__wrapper">
+                <div class="p-calender__day-of-week sunday">日</div>
+                <div class="p-calender__day-of-week">月</div>
+                <div class="p-calender__day-of-week">火</div>
+                <div class="p-calender__day-of-week">水</div>
+                <div class="p-calender__day-of-week">木</div>
+                <div class="p-calender__day-of-week">金</div>
+                <div class="p-calender__day-of-week">土</div>
+            </div>
+            <!--v-forで作れないか-->
+            <template>
+                <div id="app">
+                    <div v-for="n of 7" :key="n">
+                        <div>{{n}}</div>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+        <!--velocity.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js" integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

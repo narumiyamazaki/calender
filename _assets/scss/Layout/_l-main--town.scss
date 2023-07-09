@@ -1,0 +1,32 @@
+.l-main--town{
+    padding: 0 15px;
+    max-width: 650px;
+    margin:80px auto;
+    & > .wp-block-separator{
+        margin-bottom:80px;
+    }
+    
+    //mainタグの一番下のwp-block-columnsの中の<div>タグの中の<a>タグに任意のクラスをつける
+    
+    & > :nth-last-child(3) > .wp-block-column:first-child > p > a{
+        position:relative;
+        margin-left:16px;
+        &::before{
+            content: '<<';
+            position:absolute;
+            left:-16px;
+            color:red;
+        }
+    }
+
+    & > :nth-last-child(3) > .wp-block-column:last-child > p > a {
+        position:relative;
+        margin-right:16px;
+        &::before{
+            content: '>>';
+            position:absolute;
+            right:-16px;
+            color:red;
+        }
+    }
+}
