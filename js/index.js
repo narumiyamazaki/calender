@@ -1,5 +1,3 @@
-const dayOfWeek = ['日','月','火','水','木','金','土'];
-
 const calender = document.querySelector('.p-calender');
 
 for(let i = 0; i < 31; i++){
