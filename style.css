@@ -1,24 +1,5 @@
 @charset "UTF-8";
-/*
-	Theme Name:landscape
-	Description:landscape corporate site 
-	Version:1.0.0
-  Tested up to: 6.2
-  Requires PHP:8.1.9
-	Author:landscape
-	Tags:Web corporate site
-	License:GNU General Public License V3.0
-	License URI:https://www.gnu.org/licenses/gpl-3.0.ja.html
-	Text Domain:landscape
-/*
 
-/*Foundation*/
-/*reset*/
-/* Document
- * ========================================================================== */
-/**
- * Add border box sizing in all browsers (opinionated).
- */
 *,
 ::before,
 ::after {
